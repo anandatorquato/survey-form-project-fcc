@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="content-left">
+            <div class="box-title">
+                    <h1 id="title">Survey Form</h1>
+                    <p id="description">Hello! Are you new here? If so, we want to know more about you! Please
+                        fill up the form correcly so we can become friends! </p>
+            </div>
+
+            <hr>
+        </div>
+        
+        
+        <div class="survey-container">
+
+            <form id="survey-form">
+                <fieldset>
+                <h2>Personal Information</h2>
+
+                <label id="name-label" for="name">
+                    <span>Name: </span>
+                    <input type="text" name="name" id="name" placeholder="Enter your name " required>
+                </label>
+
+                <label id="email-label" for="email">
+                    <span>Email: </span>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </label>
+
+                <label id="number-label" for="number">
+                    <span>Age: </span>
+                    <input type="number" name="age" id="number" placeholder="Ex: 18" min="1" max="2" required>
+                </label>
+
+            </fieldset>
+            
+            <h2>About me</h2>
+
+            <fieldset>
+    
+                <label for="areaLikeMost"><h3>The area I like the most is:</h3></label>
+
+                <select id="dropdown" name="areaLikeMost">
+                        <option disabled value>Select an option</option>
+                        <option value="designer">Design</option>
+                        <option value="front_end">Front-end development</option>
+                        <option value="back_end">Back-end development</option>
+                        <option value="full_stack">Full stack development</option>
+                        <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="favoriteTech"><h3>My favorite technology is:</h3></label>
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <input name="radio-buttons" value="1" type="radio" class="favoriteTech">
+                    </li>
+
+                    <li>
+                        <label>CSS</label>
+                        <input name="radio-buttons" value="2" type="radio" class="favoriteTech">
+                    </li>
+
+                    <li>
+                        <label>JavaScript</label>
+                        <input name="radio-buttons" value="3" type="radio" class="favoriteTech">
+                    </li>
+
+                    <li>
+                        <label>PHP</label>
+                        <input name="radio-buttons" value="4" type="radio" class="favoriteTech">
+                    </li>
+
+                    <li>
+                        <label>Others</label>
+                        <input name="radio-buttons" value="5" type="radio" class="favoriteTech">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <label for="myGoals"><h3>My goals are:</h3></label>
+
+                <ul>
+                    <li>
+                        <label>
+                            <input name="goals" value="1" type="checkbox" class="myGoals">
+                            Achieve a high salary
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input name="goals" value="2" type="checkbox" class="myGoals">
+                            Build apps
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input name="goals" value="3" type="checkbox" class="myGoals">
+                            Be always creating new stuff
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input name="goals" value="4" type="checkbox" class="myGoals">
+                            Grow as a person
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input name="goals" value="5" type="checkbox" class="myGoals">
+                            Have fun
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <h2>Comments</h2>
+                <label for="comments">Let me know what your thoughts are:</label>
+
+                <textarea name="comments" id="comments" placeholder="Enter your text here"></textarea>
+            </fieldset>
+
+            <button id="submit" type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div> <!-- /container -->
+    
+</body>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+</html>

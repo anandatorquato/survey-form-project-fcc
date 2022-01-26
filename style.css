@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rokkitt', serif;
+}
+
+.container {
+    padding: 60px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+    "content-left survey-container survey-container"
+    "content-left survey-container survey-container"
+    "content-left survey-container survey-container"
+    "content-left survey-container survey-container";
+    
+}
+
+.content-left {
+    background-color:#cc5333;
+    color: #fff;
+    grid-area: content-left;
+
+}
+.box-title {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.box-title > h1{
+    padding: 10px;
+    font-size: 40px;
+}
+
+hr {
+    width: 80%;
+}
+
+.survey-container {
+    grid-area: survey-container;
+    font-size: 18px;
+}
+#survey-form {
+    background-color:#EDF5FC;
+    height:100%;
+    display: grid;
+    align-items:center;
+}
+ h2 {
+     text-align: center;
+ }
+
+#survey-form > fieldset {
+    text-align: center;
+    padding: 40px 15px 40px 15px;
+    border: none;
+}
+
+fieldset > label {
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+
+#name , #email {width: 50%}
+#number {width: 20%;}
+
+li { 
+    list-style: none;
+    padding: 4px 0px;
+}
+
+textarea {
+    height: 100px;
+    width: 80%;
+}
+
+button {
+    border: none;
+    background: #000;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+button:active {
+    background-color:#cc5333;
+}
+
+@media (max-width:750px) {
+    
+    .container {
+    padding: 0;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "content-left"
+    "survey-container";
+    height:auto;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
